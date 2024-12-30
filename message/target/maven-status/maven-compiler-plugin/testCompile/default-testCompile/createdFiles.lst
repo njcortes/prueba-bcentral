@@ -1,0 +1,10 @@
+com/bcentral/test/message/producer/controller/MessageProducerControllerTest.class
+com/bcentral/test/message/producer/service/impl/MessageProducerServiceImplTest.class
+com/bcentral/test/message/consumer/kafka/MessageStorageTest.class
+com/bcentral/test/message/shared/utils/CustomDeserializerTest.class
+com/bcentral/test/message/consumer/kafka/MessageListenerTest.class
+com/bcentral/test/message/shared/utils/CustomSerializerTest.class
+com/bcentral/test/message/MessageApplicationTests.class
+com/bcentral/test/message/consumer/controller/MessageConsumerControllerTest.class
+com/bcentral/test/message/shared/kafka/KafkaTopicsTest.class
+com/bcentral/test/message/consumer/service/impl/MessageConsumerServiceImplTest.class

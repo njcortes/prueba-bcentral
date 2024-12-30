@@ -1,0 +1,13 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+message,com.bcentral.test.message.shared.utils,CustomSerializer,0,30,0,2,0,8,0,3,0,2
+message,com.bcentral.test.message.shared.utils,CustomDeserializer,0,36,0,2,0,8,0,3,0,2
+message,com.bcentral.test.message,MessageApplication,5,3,0,0,2,1,1,1,1,1
+message,com.bcentral.test.message.consumer.kafka,MessageStorage,0,44,0,0,0,12,0,6,0,6
+message,com.bcentral.test.message.consumer.kafka,MessageListener,0,8,0,0,0,3,0,2,0,2
+message,com.bcentral.test.message.consumer.controller,MessageConsumerController,0,24,0,0,0,5,0,3,0,3
+message,com.bcentral.test.message.producer.controller,MessageProducerController,0,37,0,0,0,7,0,4,0,4
+message,com.bcentral.test.message.producer.service.impl,MessageProducerServiceImpl,0,82,0,0,0,22,0,4,0,4
+message,com.bcentral.test.message.shared.kafka,KafkaTopics,3,0,0,0,1,0,1,0,1,0
+message,com.bcentral.test.message.producer.config,KafkaTopicConfig,0,11,0,0,0,6,0,2,0,2
+message,com.bcentral.test.message.consumer.service.impl,MessageConsumerServiceImpl,0,40,0,0,0,11,0,3,0,3
+message,com.bcentral.test.message.consumer.config,MapConfig,0,7,0,0,0,2,0,2,0,2

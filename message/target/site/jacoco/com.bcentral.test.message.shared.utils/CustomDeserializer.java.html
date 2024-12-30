@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>CustomDeserializer.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">message</a> &gt; <a href="index.source.html" class="el_package">com.bcentral.test.message.shared.utils</a> &gt; <span class="el_source">CustomDeserializer.java</span></div><h1>CustomDeserializer.java</h1><pre class="source lang-java linenums">package com.bcentral.test.message.shared.utils;
+
+import org.apache.kafka.common.errors.SerializationException;
+import org.apache.kafka.common.serialization.Deserializer;
+
+import com.bcentral.test.message.shared.entities.Message;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
+
+<span class="fc" id="L10">public class CustomDeserializer implements Deserializer&lt;Message&gt; {</span>
+
+<span class="fc" id="L12">    private ObjectMapper objectMapper = new ObjectMapper();</span>
+
+    @Override
+    public Message deserialize(String topic, byte[] data) {
+        try {
+<span class="fc bfc" id="L17" title="All 2 branches covered.">            if (data == null) {</span>
+<span class="fc" id="L18">                return null;</span>
+            }
+<span class="fc" id="L20">            objectMapper.registerModule(new JavaTimeModule());</span>
+<span class="fc" id="L21">            return objectMapper.readValue(new String(data, &quot;UTF-8&quot;), Message.class);</span>
+<span class="fc" id="L22">        } catch (Exception e) {</span>
+<span class="fc" id="L23">            throw new SerializationException(&quot;Error when deserializing byte[] to Message&quot;);</span>
+        }
+    }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

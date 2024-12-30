@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.bcentral.test.message.MessageApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.548 s -- in com.bcentral.test.message.MessageApplicationTests

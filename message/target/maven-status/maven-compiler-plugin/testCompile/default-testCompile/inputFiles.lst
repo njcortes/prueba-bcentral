@@ -1,0 +1,10 @@
+/Users/nestor/Documents/bcentral/message/src/test/java/com/bcentral/test/message/MessageApplicationTests.java
+/Users/nestor/Documents/bcentral/message/src/test/java/com/bcentral/test/message/consumer/controller/MessageConsumerControllerTest.java
+/Users/nestor/Documents/bcentral/message/src/test/java/com/bcentral/test/message/consumer/kafka/MessageListenerTest.java
+/Users/nestor/Documents/bcentral/message/src/test/java/com/bcentral/test/message/consumer/kafka/MessageStorageTest.java
+/Users/nestor/Documents/bcentral/message/src/test/java/com/bcentral/test/message/consumer/service/impl/MessageConsumerServiceImplTest.java
+/Users/nestor/Documents/bcentral/message/src/test/java/com/bcentral/test/message/producer/controller/MessageProducerControllerTest.java
+/Users/nestor/Documents/bcentral/message/src/test/java/com/bcentral/test/message/producer/service/impl/MessageProducerServiceImplTest.java
+/Users/nestor/Documents/bcentral/message/src/test/java/com/bcentral/test/message/shared/kafka/KafkaTopicsTest.java
+/Users/nestor/Documents/bcentral/message/src/test/java/com/bcentral/test/message/shared/utils/CustomDeserializerTest.java
+/Users/nestor/Documents/bcentral/message/src/test/java/com/bcentral/test/message/shared/utils/CustomSerializerTest.java
